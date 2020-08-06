@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassGen</title>
+    <style>
+    .body{
+            width: 992px;
+    margin: 100 auto;
+    box-shadow: 0px 1px 5px #666;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 13px;
+    margin-top: 20px;
+    background: #00BCD4;
+    color: white;
+    }
+    h2{
+        text-align:center;
+        font-family: monospace;
+    font-size: 25px;
+    }
+    .sep {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+label{
+    font-size:20px;
+    padding-top:10px;
+}
+input, select {
+    height: 36px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 0;
+}button.btn {
+    font-size: 18px;
+    padding: 10px 0px;
+    border: 0;
+    border-radius: 10px;
+    width: 144px;
+}
+button.btn:hover{
+    cursor: pointer;
+    background: #666;
+    color:#fff;
+}
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: darkseagreen;
+    padding: 6px 10px;
+    box-shadow: 0px 1px 4px #673AB7;
+    border-radius: 3px;
+}
+    </style>
+</head>
+<body>
+    <div class="body">
+        <h2>{{head}}</h2>
+        <div class="content">
+            {% block body %}
+            
+            {% endblock body %}
+        </div>
+    </div>
+</body>
+</html>
